@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const usersRouter = require("./routes/users.route");
+require("./config/db");
 
 const app = express(); // create the app
 app.use(cors());
